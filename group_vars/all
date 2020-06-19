@@ -51,39 +51,19 @@ BREWTAP_TARGETS:
 
 #homebrew-cask list
 CASK_TARGETS:
-    - firefox
     - google-chrome
     - google-japanese-ime
-    - bitbar
-    - karabiner-elements
     - slack
     - chatwork
     - evernote
     - iterm2
     - virtualbox
-    - skitch
-    - alfred
-    - 1password
     - messenger
-    - cyberduck
-    - atom
     - macdown
-    - thunderbird
-    - clipy
-    - macvim
-    - jasper
     - visual-studio-code
-    - kitematic
 
 #homedirectory list
 HOMEDIR_TARGETS:
-  - { src: roles/homedirectory/files/.config, dest: ~/ }
   - { src: roles/homedirectory/files/.bash_profile, dest: ~/ }
   - { src: roles/homedirectory/files/.gitconfig, dest: ~/ }
-  - { src: roles/homedirectory/files/.commit_template, dest: ~/ }
-  - { src: roles/homedirectory/files/.tmux.conf, dest: ~/ }
-  - { src: roles/homedirectory/files/.vimrc, dest: ~/ }
-  - { src: roles/homedirectory/files/.zshrc, dest: ~/ }
-  - { src: roles/homedirectory/files/.gvimrc, dest: ~/ }
   - { src: roles/homedirectory/files/.vim, dest: ~/ }
-  - { src: roles/homedirectory/files/.terraformrc, dest: ~/ }
