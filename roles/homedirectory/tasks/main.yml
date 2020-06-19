@@ -16,7 +16,7 @@
 - name: Download dein.vim install.sh
   get_url:
     url: https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh
-    dest: ~/.config/nvim
+    dest: ~/.config/nvim/
     mode: 0755
 
 - name: install.sh dein.vim
@@ -25,7 +25,7 @@
 - name: git_clone iterm2 color schema Japanesque
   git:
     repo: "https://github.com/aereal/dotfiles.git"
-     dest: "~/Desktop/dotfiles/"
+    dest: "~/Desktop/dotfiles/"
   ignore_errors: yes
 
 - name: git_clone iterm2 fonts
