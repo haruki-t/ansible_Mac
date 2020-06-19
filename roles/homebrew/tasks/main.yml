@@ -15,10 +15,10 @@
   loop:
     - "{{ BREW_TARGETS }}"
 
-- name: Install python 3.8.2  
+- name: Install python 3.7.7 
   tags: homebrew
   ignore_errors: yes
-  shell: pyenv install 3.8.2 && pyenv global 3.8.2
+  shell: pyenv install 3.7.7 && pyenv global 3.7.7
 
 - name: Install pip 
   tags: homebrew
@@ -27,10 +27,4 @@
 - name: upgrade pip 
   tags: homebrew
   shell: sudo pip install --upgrade pip
-
-- name: Install pip packages
-  pip: name={{ item }}
-  tags: homebrew
-  loop:
-    - "{{ PIP_TARGETS }}"
 
